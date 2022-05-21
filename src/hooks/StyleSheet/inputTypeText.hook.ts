@@ -20,9 +20,16 @@ export const useInputTypeText = () => {
     event: React.KeyboardEvent<HTMLInputElement>,
   ): void => {}
 
+  const reactButtonHandleChange = (
+    event: React.MouseEvent<HTMLElement, MouseEvent> | undefined,
+  ) => {
+    console.log({ event })
+  }
+
   return {
     styleSheetData,
     inputTypeTextHandleChange,
     inputTypeTextHandleOnKeyUp,
+    reactButtonHandleChange,
   }
 }
