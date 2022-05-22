@@ -30,7 +30,15 @@
 .d-flex {
   display: flex;
 }
-
+.react-table-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+table,
+th,
+td {
+  border: 1px solid;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
